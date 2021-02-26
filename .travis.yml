@@ -4,10 +4,13 @@ notifications:
   email: false
 julia:
   - 1.0
+  - 1.1
+  - 1.2
   - 1.5
   - nightly
 os:
   - linux
+  - osx
 arch:
   - x64
 cache:
