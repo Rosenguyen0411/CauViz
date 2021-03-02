@@ -1,7 +1,2 @@
-using CauViz
-using Test
-
-@testset "CauViz.jl" begin
-    @test my_f(2,1) == 5
-    @test my_f(2,3) == 7
-end
+using SafeTestsets
+@safetestset "My f tests" begin include("my_f_test.jl") end
