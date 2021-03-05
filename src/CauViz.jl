@@ -2,11 +2,13 @@
 module CauViz
 
 using ForwardDiff
-
-greet() = print("Hello World")
+using RCall
+using StructuralCausalModels
 
 include("extra_file.jl")
 
-export my_f, derivative_of_my_f
+include("GrViz.jl")
+
+export my_f, derivative_of_my_f, t_g, grViz
 
 end
