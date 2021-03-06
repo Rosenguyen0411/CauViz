@@ -10,6 +10,7 @@ StructuralCausalModels = "a41e6734-49ce-4065-8b83-aff084c01dfd"
 
 [compat]
 ForwardDiff = "0.10"
+RCall = "0.13"
 julia = "1"
 
 [extras]
