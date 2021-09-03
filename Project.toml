@@ -6,6 +6,7 @@ version = "0.1.0"
 [deps]
 ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 StructuralCausalModels = "a41e6734-49ce-4065-8b83-aff084c01dfd"
 
 [compat]
