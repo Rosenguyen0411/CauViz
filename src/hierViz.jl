@@ -1,9 +1,11 @@
 #= Visualize the hierarchical structure given the position of nodes 
 returned by function getpos =#
 
-function hierviz(Pos)
+    function hierviz(Pos)
     
     Val = sum(convert(Array, value.(Pos)), dims = 1)
+
+    nNodes = sqrt(length(Pos))
     opt = round.((Val .+ 1 .+ nNodes) ./2)
     
     newNodeList = collect(1:nNodes)
