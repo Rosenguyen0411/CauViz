@@ -5,7 +5,7 @@ returned by function getpos =#
     
     Val = sum(convert(Array, value.(Pos)), dims = 1)
 
-    nNodes = sqrt(length(Pos))
+    nNodes = Int(sqrt(length(Pos)))
     opt = round.((Val .+ 1 .+ nNodes) ./2)
     
     newNodeList = collect(1:nNodes)
@@ -15,7 +15,7 @@ returned by function getpos =#
     end 
     
     
-    Drawing(1500, 1500)
+    Drawing(1800, 1000)
     origin()
     background("white")
     sethue("black")
