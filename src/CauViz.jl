@@ -1,14 +1,14 @@
 
 module CauViz
 
-using ForwardDiff
-using RCall
-using StructuralCausalModels
+using Luxor
+using JuMP
+using GLPK
 
-include("extra_file.jl")
 
-include("GrViz.jl")
+include("GetPos.jl")
+include("hierViz.jl")
 
-export my_f, derivative_of_my_f, t_g, grViz
+export getpos, hierviz
 
 end
