@@ -96,5 +96,5 @@ function getpos(N, plateList)
 
     optimize!(model)
     @show value.(X)
-    #return(value.X)
+    return(nNodes)
 end
