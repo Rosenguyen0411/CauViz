@@ -5,8 +5,8 @@ returned by function getpos =#
     
     Val = sum(convert(Array, value.(Pos)), dims = 1)
 
-    nNodes = Int(sqrt(length(Pos)))
-    
+    #nNodes = Int(sqrt(length(Pos)))
+
     opt = round.((Val .+ 1 .+ nNodes) ./2)
     
     newNodeList = collect(1:nNodes)
