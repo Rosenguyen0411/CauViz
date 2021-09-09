@@ -124,4 +124,4 @@ optimize!(model)
             N = [[1 2 3 4], [5 6], [7 8  ]]
             plateList = [[2,3,4,8],[5,6]]
             Pos = getpos(N, plateList)
-            hierviz(Pos)
+            hierviz(N, plateList, Pos)
