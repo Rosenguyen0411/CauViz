@@ -3,7 +3,8 @@ returned by function getpos =#
 
     function hierviz(Pos)
     
-    Val = sum(convert(Array, value.(Pos)), dims = 1)
+    #Val = sum(convert(Array, value.(Pos)), dims = 1)
+    Val = sum(Pos, dims = 1)
 
     #nNodes = Int(sqrt(length(Pos)))
 
