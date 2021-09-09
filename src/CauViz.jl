@@ -7,7 +7,8 @@ using GLPK
 
 include("GetPos.jl")
 include("hierViz.jl")
+include("sugiViz.jl")
 
-export getpos, hierviz
+export getpos, hierviz, layoutTree
 
 end

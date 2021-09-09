@@ -96,3 +96,26 @@ end
 optimize!(model)
 @show value.(X);
 
+
+
+
+
+
+
+            adj_list = Vector{Int}[
+                [2,4], #node1
+                [5], #node2
+                [5, 7, 8], #node3
+                [], #node4
+                [8], #node 5
+                [7], #node 6
+                [8], #node 7
+                []
+            ]
+            
+            labels = ["1", "2", "3", "4", "5", "6", "7", "8"]
+
+            layoutTree(adj_list,labels,filename="tree_1.svg",
+            cycles = false, ordering = :barycentric, coord = :optimal,
+            xsep = 50, x_start = 100, ysep = 100, scale = 0.2, labelpad = 1.2,
+            background = "white")
