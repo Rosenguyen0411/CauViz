@@ -119,3 +119,9 @@ optimize!(model)
             cycles = false, ordering = :barycentric, coord = :optimal,
             xsep = 50, x_start = 100, ysep = 100, scale = 0.2, labelpad = 1.2,
             background = "white")
+
+
+            N = [[1 2 3 4], [5 6], [7 8  ]]
+            plateList = [[2,3,4,8],[5,6]]
+            Pos = getpos(N, plateList)
+            hierviz(Pos)
